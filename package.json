@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "node --test --experimental-strip-types tests/trips.test.ts tests/itinerary_edge_cases.test.ts",
+    "test:all": "node --test --test-timeout=90000 --experimental-strip-types tests/*.test.ts"
   },
   "dependencies": {
     "next": "16.4.0",
